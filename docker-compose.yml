@@ -6,7 +6,7 @@ services:
     restart: always
     build: ./getaway
     ports:
-    - ":8000:8000"
+    - "8000:8000"
 
   characters:
     container_name: characters
