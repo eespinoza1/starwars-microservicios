@@ -19,9 +19,6 @@ router.get("/:model/:id", validateModel, async (req, res) => {
     res.status(200).json(response);
 });
 
-// router.get("/films", async (req, res) => {
-//     const response = await Film.list();
-//     res.status(200).json(response);
-// });
+
 
 module.exports = router;
