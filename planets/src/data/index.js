@@ -7,7 +7,7 @@ module.exports = {
         return result.data;
     },
     get: async (id) => {
-        const result = await axios.get(`http://database:8004/Planet${id}`);
+        const result = await axios.get(`http://database:8004/Planet/${id}`);
         return result.data;
     },
     create: async () => {

@@ -10,7 +10,7 @@ server.use(express.json());
 server.use("/characters", require("./routes"));
 
 server.use("*", (req,res) =>{
-    res.status(404).send("Not Foundxxxx")
+    res.status(404).send("Not Found")
 });
 
 server.use((err, req , res, next)=>{

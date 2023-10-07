@@ -1,4 +1,3 @@
-const films = require("./films.json");
 const axios = require("axios");
 
 module.exports = {
@@ -7,7 +6,7 @@ module.exports = {
         return result.data;
     },
     get: async (id) => {
-        const result = await axios.get(`http://database:8004/Film${id}`);
+        const result = await axios.get(`http://database:8004/Film/${id}`);
         return result.data;
     },
     create: async ()=>{
